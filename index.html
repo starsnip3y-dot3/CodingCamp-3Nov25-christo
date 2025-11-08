@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>MyPorto</title>
+  </head>
+
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header
+      class="main-header flex flex-col md:flex-row justify-between items-center p-4 md:px-10 bg-white shadow"
+    >
+      <!-- Logo -->
+      <div class="logo text-2xl font-bold mb-2 md:mb-0"></div>
+
+      <!-- Navigation Menu -->
+      <nav class="flex flex-wrap justify-center gap-2 md:gap-4">
+        <a class="border rounded p-2 hover:bg-gray-100" href="#home-page"
+          >Home</a
+        >
+        <a class="border rounded p-2 hover:bg-gray-100" href="#our-profile-page"
+          >Our Profile</a
+        >
+        <a class="border rounded p-2 hover:bg-gray-100" href="#portofolio-page"
+          >Portofolio</a
+        >
+        <a class="border rounded p-2 hover:bg-gray-100" href="#message-us-page"
+          >Message Us</a
+        >
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Home Page -->
+      <section
+        id="home-page"
+        class="min-h-[300px] flex flex-col justify-center items-center text-center px-4 md:px-20"
+      >
+        <h2 class="md:text-4xl font-bold" id="welcome-speech">
+          Welcome to My Porto
+        </h2>
+        <p class="mt-4 text-sm md:text-base max-w-2xl text-justify">
+          Hi, I’m Chornelles Yeremia an enthusiastic Frontend Developer and
+          UI/UX design enthusiast based in Indonesia. As a first-year
+          Informatics Engineering student, I’m passionate about creating modern,
+          responsive, and user-friendly web interfaces. I love combining design
+          and functionality to build experiences that are both visually
+          appealing and intuitive to use. Currently, I’m exploring various
+          frontend technologies and UI/UX design principles to sharpen my skills
+          and bring creative ideas to life through clean and thoughtful design.
+          My goal is to continue learning, experimenting, and crafting digital
+          experiences that truly connect with users.
+        </p>
+      </section>
+
+      <!-- Our Profile Page -->
+      <section
+        id="our-profile-page"
+        class="min-h-[300px] flex flex-col justify-center items-center text-center px-4 md:px-20"
+      >
+        <h2 class="md:text-4xl font-bold">Our Profile</h2>
+        <p class="mt-4 text-sm md:text-base max-w-2xl text-justify">
+          My name is Chornelles Yeremia, a first-year student in the Informatics
+          Engineering program. I am currently learning the basics of
+          programming, web development, and UI/UX principles. I enjoy exploring
+          new tools, creating small projects, and improving my skills in both
+          design and web development. My goal is to build responsive and
+          visually appealing websites, enhance my UI/UX skills, and grow into a
+          creative and skilled developer.
+        </p>
+      </section>
+
+      <!-- Portofolio Page -->
+      <section
+        id="portofolio-page"
+        class="min-h-[300px] px-4 md:px-10 lg:px-20 py-8 text-center"
+      >
+        <h2 class="md:text-4xl font-bold mb-4">Portofolio</h2>
+        <p class="text-sm md:text-base mb-6 max-w-3xl mx-auto">
+          Here are some of my early projects and assignments during my studies.
+          These projects showcase my skills in web development and UI/UX design.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div class="border rounded p-4 hover:shadow-lg transition">
+            <h3 class="font-semibold">Project 1: Personal Website</h3>
+            <p class="text-sm">
+              A simple personal website built using HTML and CSS to practice
+              responsive layout and design.
+            </p>
+          </div>
+          <div class="border rounded p-4 hover:shadow-lg transition">
+            <h3 class="font-semibold">Project 2: Landing Page Assignment</h3>
+            <p class="text-sm">
+              A landing page made as part of a web development assignment.
+              Learned layout and typography basics.
+            </p>
+          </div>
+          <div class="border rounded p-4 hover:shadow-lg transition">
+            <h3 class="font-semibold">Project 3: Mini UI/UX Mockup</h3>
+            <p class="text-sm">
+              Created a mobile app interface mockup using Figma to practice
+              UI/UX design principles.
+            </p>
+          </div>
+          <div class="border rounded p-4 hover:shadow-lg transition">
+            <h3 class="font-semibold">Project 4: HTML Form Practice</h3>
+            <p class="text-sm">
+              Simple contact form with HTML and CSS, practicing form input
+              styling and validation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Message Us Page -->
+      <section
+        id="message-us-page"
+        class="min-h-[500px] flex flex-col justify-center items-center px-4 md:px-20 py-8"
+      >
+        <header class="text-center mb-6 w-full max-w-4xl">
+          <h2 class="md:text-4xl font-bold">Message Us</h2>
+          <p class="mt-2 text-gray-600">
+            We are glad to have you here. Explore our services and offerings.
+          </p>
+        </header>
+
+        <!-- Container Flex: Form + Output -->
+        <div class="flex flex-col md:flex-row gap-6 w-full max-w-4xl">
+          <!-- Form -->
+          <form id="message-form" class="space-y-4 w-full md:w-1/2">
+            <div>
+              <label class="block mb-2 font-medium" for="name">Name:</label>
+              <input
+                class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-400"
+                type="text"
+                id="name"
+                name="name"
+              />
+            </div>
+
+            <div>
+              <label class="block mb-2 font-medium" for="email">Email:</label>
+              <input
+                class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-400"
+                type="email"
+                id="email"
+                name="email"
+              />
+            </div>
+
+            <div>
+              <label class="block mb-2 font-medium" for="message"
+                >Message:</label
+              >
+              <textarea
+                class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-400"
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <div class="flex justify-center mt-2">
+              <button
+                class="px-4 py-2 bg-black text-white rounded hover:bg-gray-600 transition"
+                type="submit"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+
+          <!-- Output -->
+          <div
+            id="output"
+            class="w-full md:w-1/2 p-4 border rounded bg-gray-100"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center p-4 mt-10">
+      <p>© 2025 Chornelles Yeremia. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
